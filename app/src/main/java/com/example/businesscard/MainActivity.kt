@@ -47,8 +47,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BusinessCardApp() {
+    // Primeiramente utilizei o Card como uma indicação em outro projeto, estava com problemas para
+    // organizar todos os componentes na tela e o card funcionou bem.
     val modifier = Modifier
     Card(
+        // Utilizei o resource file do color, para adicionar algumas cores do material design
         backgroundColor = colorResource(R.color.blue_gray_900)
     ) {
         ProfileInfo(
@@ -56,6 +59,7 @@ fun BusinessCardApp() {
             title = "Android Developer",
             modifier = modifier
         )
+        // Aqui pode ser melhor escrito, escrevendo da mesma forma do ProfileInfo()
         ContactDetails()
     }
 
@@ -64,7 +68,8 @@ fun BusinessCardApp() {
 @Composable
 fun ProfileInfo(fullName: String, title: String, modifier: Modifier) {
     Column(
-        // Eu fiz o layout poder ter o tamanho da tela inteira e nisso alinhei conforme precisei
+        // Eu fiz o layout poder ter o tamanho da tela inteira e nisso alinhei conforme precisei,
+        // repliquei isso também no ContactDetails()
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight(),
@@ -108,8 +113,12 @@ fun ContactDetails() {
             .fillMaxWidth()
             .fillMaxHeight()
             .padding(bottom = 32.dp)
+                // não sei para que serve esse width (preciso ver em alguma doc depois)
             .width(intrinsicSize = IntrinsicSize.Min)
     ) {
+        // Utilizei o divider para criar uma linha separando os conteudos
+        // Também peguei essa dica em outro projeto
+        // Depois dar uma olhada melhor nas funcionalidades do Divider()
         Divider(
             color = colorResource(R.color.blue_gray_50),
             modifier = Modifier

@@ -6,7 +6,7 @@ Desafio de conclusão da unidade 1 do curso [Android Basics with Compose](https:
 
 Card visual do meu perfil como desenvolvedor Android.
 
-![](https://user-images.githubusercontent.com/58408758/191982336-27779fe6-0262-4409-9049-5e5e10aca2e1.png)
+![](https://user-images.githubusercontent.com/58408758/191983646-8bb0cf8e-b948-4c49-9b96-fa41620913f4.png)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 

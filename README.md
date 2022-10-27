@@ -14,7 +14,7 @@ As técnicas e tecnologias utilizadas pra isso são:
 
 - `Jetpack Compose`
 - `Layouts`: Column, Row e Card
-- `Design`: Text, Icons e Images
+- `Components`: Text, Icons e Images
 
 
 ## 🛠️ Abrir e rodar o projeto
